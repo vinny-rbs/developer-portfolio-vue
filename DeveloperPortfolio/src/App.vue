@@ -1,7 +1,7 @@
 <script setup>
-
+  import TheHeader from "@/components/Layout/TheHeader.vue"
 </script>
 
 <template>
-  <h1>Hellow World</h1>
+  <TheHeader />
 </template>

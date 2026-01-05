@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@theme {
+  --color-light: #F5F5F5;
+  --color-dark-900: #0A0A0A;
+  --color-dark-800: #1C1917;
+  --color-blue-900: #0F172B;
+  --color-blue-500: #2B7FFF;
+  --color-orange: #EC844F;
+  --color-red: #FB6464;
+  --color-shadow: #414141;
+
+  --text-h1: 40;
+  --text-h2: 32;
+  --text-h3: 24;
+  --text-medium: 16;
+  --text-small: 12;
+}
+
+h1, h2, h3, p, b, li {
+    color: var(--color-light)
+}
+
+li {
+    cursor: pointer;
+}
