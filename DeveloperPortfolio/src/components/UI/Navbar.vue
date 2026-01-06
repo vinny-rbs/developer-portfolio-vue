@@ -1,20 +1,21 @@
 <script setup>
 
-    import { ref } from 'vue';
     import { RouterLink } from 'vue-router';
-
-    let liActive = ref("Sobre mim")
 
 </script>
 
 <template>
     <nav class="flex w-full h-full items-center flex-row-reverse border-dashed">
         <ul class="flex justify-around items-center gap-[clamp(2rem,8vw,4rem)]">
-            <RouterLink to="/" >
-                <li @click="liActive='Sobre mim'" :class="liActive === 'Sobre mim' ? 'active' : ''">Sobre mim</li>
+            <RouterLink to="/" active-class="active">
+                <li>Sobre mim</li>
             </RouterLink>
-            <li @click="liActive='Projetos'"  :class="liActive === 'Projetos' ? 'active' : ''">Projetos</li>
-            <li @click="liActive='Habilidades'"  :class="liActive === 'Habilidades' ? 'active' : ''">Habilidades</li>
+            <RouterLink to="/projects" active-class="active">
+                <li>Projetos</li>
+            </RouterLink>
+            <RouterLink to="/ability" active-class="active">
+                <li>Habilidades</li>
+            </RouterLink>
         </ul>
     </nav>
 </template>
