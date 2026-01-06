@@ -21,3 +21,21 @@ import type { Component } from 'vue'
         </slot>
     </button>
 </template>
+
+<style scoped>
+
+    button {
+        transition: all 0.2s ease-in-out; 
+    }
+
+    button:hover {
+        transform: translateY(-4px);
+        box-shadow: 0px 4px 0 var(--color-light);
+    }
+
+    button:active {
+        transform: translateY(2px);
+        box-shadow: 0px 0px 0 var(--color-light);
+    }
+
+</style>

@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 @import "tailwindcss/theme.css" layer(theme);
 @import "tailwindcss/preflight.css" layer(base);
 @import "tailwindcss/utilities.css" layer(utilities);
+
 
 @theme {
   --color-light: #F5F5F5;
@@ -26,11 +28,62 @@
   body {
     height: 100%;
     -webkit-font-smoothing: antialiased;
+    font-family: "Montserrat", sans-serif;
   }
 
   h1,h2,h3,p,b,li {
     color: var(--color-light);
   }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p, li {
+    font-size: 1rem;
+  }
+
+  li {
+    position: relative;
+  }
+
+  /* li::after {
+    position: absolute;
+    content: "";
+    display: flex;
+    width: 100%;
+    height: 2px;
+    width: 0%;
+  }
+  
+  li:hover::after {
+    width: 100%;
+    background-color: var(--color-light);
+    animation: 0.5s ease-in-out forwards liHover;
+  } */
+
+  li::after {
+  content: "";
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-light);
+  transition: all 0.5s ease-in-out; 
+  transform: rotateY(90deg);
+}
+
+li:hover::after {
+  transform: rotateY(0deg);
+}
 
   img {
     max-width: 100%;
@@ -47,6 +100,12 @@
 
 }
 
-body {
-  box-shadow: 0px 8px 0 var(--color-light);
+@keyframes liHover {
+  from {
+    transform: rotateY(90deg);
+  }
+
+  to {
+    transform: rotateY(deg);
+  }
 }
