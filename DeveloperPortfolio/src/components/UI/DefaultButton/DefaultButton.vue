@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-    <button class="border-light border-3 rounded-[2em] p-2 shadow-[0px_3px_0_var(--color-light)] shadow-light">
+    <button class="flex border-light border-3 gap-4 rounded-[2em] p-2 shadow-[0px_3px_0_var(--color-light)] w-fit h-fit shadow-light">
         <slot name="icon"></slot>
         <slot name="content"></slot>
     </button>

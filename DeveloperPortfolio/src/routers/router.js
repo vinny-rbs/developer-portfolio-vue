@@ -16,7 +16,7 @@ const router = createRouter({
     {
       path: '/ability',
       name: 'ability',
-      component: () => import('@/Views/ability.vue'),
+      component: () => import('@/Views/Ability.vue'),
     },
     {
       path: '/:pathMatch(.*)*',

@@ -2,7 +2,6 @@
 
     import TheHeader from '@/components/Layout/TheHeader.vue';
 
-
 </script>
 
 <template>

@@ -16,7 +16,7 @@
         <Divider />
         <DefaultButton @click="isDark = !isDark">
             <template #icon>
-                <ButtonIcon :icon="isDark ? Sun : Moon" color="#f5f5f5" />
+                <ButtonIcon :icon="isDark ? Sun : Moon"  />
             </template>
         </DefaultButton>
     </header>

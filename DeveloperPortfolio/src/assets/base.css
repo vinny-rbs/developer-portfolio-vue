@@ -14,7 +14,7 @@
   --color-orange: #EC844F;
   --color-red: #FB6464;
   --color-shadow: #414141;
-
+  
   --text-h1: 40;
   --text-h2: 32;
   --text-h3: 24;
@@ -23,7 +23,7 @@
 }
 
 @layer base {
-
+  
   html,
   body {
     height: 100%;
@@ -31,25 +31,36 @@
     font-family: "Montserrat", sans-serif;
     background-color: var(--color-dark-900);
   }
+  
+  *::selection {
+    background-color: var(--color-red);
+    color: inherit;
+  }
+
+  h1,h2,h3,p,b,li {
+    color: var(--color-light);
+  }
 
   h1,h2,h3,p,b,li {
     color: var(--color-light);
   }
 
   h1 {
-    font-size: 4rem;
+    font-size: clamp(2.5rem,5vw,4rem);
+    font-weight: bold;
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: clamp(1.5rem,2.5vw,2rem);
+    font-weight: bold;
   }
 
   h3 {
-    font-size: 1.5rem;
+    font-size: clamp(1.25rem,2vw,1.5rem);
   }
 
   p, li {
-    font-size: 1rem;
+    font-size: clamp(0.75rem,2vw,1rem);
   }
 
   img {
@@ -64,5 +75,6 @@
   blockquote {
     quotes: none;
   }
+
 
 }

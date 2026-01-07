@@ -1,10 +1,11 @@
 <script setup>
 
     import TheHeader from '@/components/Layout/TheHeader.vue';
+    import Hero from '@/components/Layout/Hero/HeroMain.vue';
 
 </script>
 
 <template>
     <TheHeader />
-    <h1>Sobre mim</h1>
+    <Hero />
 </template>
