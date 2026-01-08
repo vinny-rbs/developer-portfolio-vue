@@ -7,10 +7,10 @@
 </script>
 
 <template>
-    <article class="h-full flex flex-col flex-1 gap-4">
+    <article class="h-full flex  flex-col flex-1 gap-8 py-[clamp(3em,10vw,8em)]">
         <div class="flex flex-col gap-1.5">
             <p>Olá, eu sou</p>
-            <h2 class="text-4xl">Vinicius Ribeiro da Silva</h2>
+            <h2 class="text-5xl">Vinicius Ribeiro da Silva</h2>
         </div>
         <div class="flex gap-4">
             <Badge color="var(--color-blue-500)" label="Desenvolvedor Fullstack" />
@@ -32,9 +32,22 @@
                     <ButtonIcon :icon="FileUser" :stroke-width=2.5 />
                 </template>
                 <template #content>
-                    <ButtonContent label="Cúrriculo" />
+                    <a href="/CV Vinicius Ribeiro PT.pdf" target="_blank"rel="noopener noreferrer" download="Vinicius Ribeiro currículo">
+                        <ButtonContent label="Currículo" />
+                    </a>
                 </template>
             </DefaultButton>
         </div>
     </article>
 </template>
+
+<style scoped>
+
+    @media (max-width: 1024px) {
+        article {
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+</style>

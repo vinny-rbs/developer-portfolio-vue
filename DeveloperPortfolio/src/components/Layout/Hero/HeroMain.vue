@@ -6,8 +6,17 @@
 </script>
 
 <template>
-    <main class="h-[calc(100vh-clamp(4rem,10vw,7rem))] w-dvw flex flex-row px-[clamp(2em,10vw,4.5em)] py-4">
+    <main class="h-[calc(100vh-clamp(4rem,10vw,7rem))] w-dvw flex flex-row px-[clamp(2em,8vw,4.5em)] py-4">
         <HeroArticle />
         <HeroAside />
     </main>
 </template>
+
+<style scoped>
+    @media (max-width: 1024px) {
+        main {
+            height: auto;
+            flex-direction: column;
+        }
+    }
+</style>
