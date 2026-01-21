@@ -13,7 +13,7 @@
 </script>
 
 <template>
-    <div class="CardIcon h-full w-full flex justify-center items-center p-4">
+    <div class="CardIcon h-full w-full flex justify-center items-center p-3.5">
         <component :is="icon" :size="size ?? 'clamp(18px, 3vw, 24px)'" :color="color ?? '#f5f5f5'" :strokeWidth="strokeWidth ?? 2" />
     </div>
 </template>

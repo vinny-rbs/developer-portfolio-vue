@@ -6,7 +6,7 @@
 
 <template>
     <nav class="flex w-full h-full items-center flex-row-reverse border-dashed">
-        <ul class="flex justify-around items-center gap-[clamp(2rem,8vw,4rem)]">
+        <ul class="flex justify-around items-center gap-[clamp(1rem,8vw,4rem)]">
             <RouterLink to="/" active-class="active">
                 <li>Sobre mim</li>
             </RouterLink>
