@@ -4,5 +4,7 @@
 </script>
 
 <template>
-    <h1>Habilidades</h1>
+    <section>
+        <h2 class="text-5xl">Habilidades</h2>
+    </section>
 </template>

@@ -1,7 +1,7 @@
 <script setup>
 
-    import HeroArticle from './HeroArticle.vue';
-    import HeroAside from './HeroAside.vue';
+import HeroArticle from './HeroArticle.vue';
+import HeroAside from './HeroAside.vue';
 
 </script>
 
@@ -13,10 +13,10 @@
 </template>
 
 <style scoped>
-    @media (max-width: 1115px) {
-        main {
-            height: auto;
-            flex-direction: column;
-        }
+@media (max-width: 1115px) {
+    main {
+        height: auto;
+        flex-direction: column;
     }
+}
 </style>

@@ -1,6 +1,6 @@
 <script setup>
 
-    import { RouterLink } from 'vue-router';
+import { RouterLink } from 'vue-router';
 
 </script>
 
@@ -21,30 +21,28 @@
 </template>
 
 <style scoped>
+.active {
+    text-shadow: 0.5px 0 0 currentColor, -0.5px 0 0 currentColor;
+    transition: all 0.2s ease-in-out;
+}
 
-    .active {
-        text-shadow: 0.5px 0 0 currentColor, -0.5px 0 0 currentColor;
-        transition: all 0.2s ease-in-out;
-    }
+li {
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
 
-    li {
-        position: relative;
-        transition: all 0.2s ease-in-out;
-    }
+li::after {
+    content: "";
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-light);
+    transition: all 0.5s ease-in-out;
+    transform: rotateY(90deg);
+}
 
-    li::after {
-        content: "";
-        position: absolute;
-        display: flex;
-        width: 100%;
-        height: 2px;
-        background-color: var(--color-light);
-        transition: all 0.5s ease-in-out; 
-        transform: rotateY(90deg);
-    }
-
-    li:hover::after {
-        transform: rotateY(0deg);
-    }
-
+li:hover::after {
+    transform: rotateY(0deg);
+}
 </style>

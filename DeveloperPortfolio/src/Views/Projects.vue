@@ -1,8 +1,10 @@
 <script setup>
-
+import ProjectCard from '@/components/Layout/Carousel/ProjectCard.vue'
 
 </script>
 
 <template>
-    <h1>Projetos</h1>
+    <section>
+        <ProjectCard />
+    </section>
 </template>

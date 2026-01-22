@@ -1,9 +1,11 @@
 <script setup>
 
-    import Hero from '@/components/Layout/Hero/HeroMain.vue';
+import Hero from '@/components/Layout/Hero/HeroMain.vue';
 
 </script>
 
 <template>
-    <Hero />
+    <section>
+        <Hero />
+    </section>
 </template>

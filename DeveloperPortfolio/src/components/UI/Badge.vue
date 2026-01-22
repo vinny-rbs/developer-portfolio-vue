@@ -1,9 +1,9 @@
 <script setup lang="ts">
 
-    const BadgeProps = defineProps<{
-        label: string
-        color?: string
-    }>();
+const BadgeProps = defineProps<{
+    label: string
+    color?: string
+}>();
 
 </script>
 
@@ -12,11 +12,9 @@
 </template>
 
 <style scoped>
-
-    p {
-        background-color: color-mix(in srgb, v-bind('BadgeProps.color'), transparent 85%);
-        color: v-bind('BadgeProps.color');
-        border-color: v-bind('BadgeProps.color');
-    }
-
+p {
+    background-color: color-mix(in srgb, v-bind('BadgeProps.color'), transparent 85%);
+    color: v-bind('BadgeProps.color');
+    border-color: v-bind('BadgeProps.color');
+}
 </style>
