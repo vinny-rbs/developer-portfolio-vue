@@ -1,15 +1,14 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue'
+import { ref } from 'vue'
 import { projects } from '@/data/projects'
-import { DefaultButton, ButtonIcon } from '@/components/UI/DefaultButton/index'
-import { ArrowLeft, ArrowRight, AppWindow } from 'lucide-vue-next';
-import Badge from '@/components/UI/Badge.vue';
+import { DefaultButton, ButtonIcon } from '@/components/UI/DefaultButton'
+import { ArrowLeft, ArrowRight, AppWindow } from 'lucide-vue-next'
+import Badge from '@/components/UI/Badge.vue'
 
 const currentIndex = ref(0)
 
-const currentProject = computed(() => {
-    return projects[currentIndex.value]
-})
+const CARD_WIDTH = 360
+const GAP = 32
 
 const next = () => {
     currentIndex.value = (currentIndex.value + 1) % projects.length
@@ -19,39 +18,51 @@ const prev = () => {
     currentIndex.value =
         (currentIndex.value - 1 + projects.length) % projects.length
 }
-
 </script>
 
 <template>
-    <section class="h-[calc(100vh-clamp(4rem,10vw,7rem))] w-dvw flex flex-col px-[clamp(2em,8vw,4.5em)] py-4 gap-8">
-        <div class="w-screen">
-            <h2 class="text-5xl ">Projetos</h2>
-        </div>
-        <div class="w-full h-full flex justify-center items-center gap-12">
+    <section class="w-screen min-h-screen px-[clamp(2rem,5vw,4.5rem)] py-10 flex flex-col gap-10">
+        <h2 class="text-5xl font-bold">PROJETOS</h2>
+        <div class="flex items-center gap-8">
             <DefaultButton @click="prev">
                 <template #content>
                     <ButtonIcon :icon="ArrowLeft" />
                 </template>
             </DefaultButton>
-            <main v-if="currentProject" class="flex flex-col justify-center items-center gap-4">
-                <a :href="currentProject.liveDemo" target="_blank" rel="noopener noreferrer" class="img-wrapper"
-                    :aria-label="`Abrir o projeto ${currentProject.title} em uma nova aba`"
-                    :title="`Abrir ${currentProject.title}`">
-                    <img class="aspect-square w-[clamp(15em,30vw,25em)] max-w-[25em] rounded-xl"
-                        :src="currentProject.image" :alt="currentProject.title" />
-                    <div class="overlay-content">
-                        <AppWindow class="overlay-icon" :size=42 />
-                        <span class="overlay-text text-2xl">Conheça o meu projeto</span>
-                    </div>
-                </a>
-                <h3 class="text-2xl font-bold">{{ currentProject.title }}</h3>
-                <p class="text-sm">{{ currentProject.description }}</p>
-                <div class="flex gap-2">
-                    <div v-for="tech in currentProject.technologies" :key="tech">
-                        <Badge :label="tech" color="var(--color-blue-500)" />
+            <div class="overflow-hidden w-full ">
+                <div class="carousel flex transition-transform duration-700 ease-[cubic-bezier(0.4,0,0.2,1)] gap-8"
+                    :style="{
+                        transform: `translateX(-${currentIndex * (CARD_WIDTH + GAP)}px)`
+                    }">
+                    <div v-for="project in projects" :key="project.id"
+                        class="w-full max-w-[25em] shrink-0 flex flex-col gap-6">
+                        <a :href="project.liveDemo" target="_blank" rel="noopener noreferrer"
+                            class="relative overflow-hidden rounded-xl group">
+                            <img :src="project.image" :alt="project.title"
+                                class="aspect-square w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+                            <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity
+                       flex flex-col items-center justify-center gap-2 text-white">
+                                <AppWindow :size="42" />
+                                <span class="text-xl font-semibold text-center">
+                                    Conheça o projeto
+                                </span>
+                            </div>
+                        </a>
+                        <div class="flex flex-col gap-4">
+                            <h3 class="text-2xl font-bold">
+                                {{ project.title }}
+                            </h3>
+                            <p class="text-sm text-zinc-400 line-clamp-3">
+                                {{ project.description }}
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <Badge v-for="tech in project.technologies" :key="tech.title" :label="tech.title"
+                                    :color="tech.color" />
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </main>
+            </div>
             <DefaultButton @click="next">
                 <template #content>
                     <ButtonIcon :icon="ArrowRight" />
@@ -61,63 +72,22 @@ const prev = () => {
     </section>
 </template>
 
+
 <style scoped>
-button {
-    border-radius: 1em;
-}
-
-.img-wrapper {
-    position: relative;
-    display: inline-block;
-    border-radius: 0.75rem;
-}
-
-.img-wrapper img {
-    display: block;
-    transition: transform 0.3s ease;
-}
-
-.img-wrapper::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.55);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    transform: scale(1.05);
-}
-
-.img-wrapper:hover::after {
-    opacity: 1;
-}
-
-.img-wrapper:hover img {
-    transform: scale(1.05);
-}
-
-.overlay-content {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    color: var(--color-light);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: 3;
-}
-
-
-
-.img-wrapper:hover .overlay-content {
-    opacity: 1;
+h2 {
+    font-family: "Bebas Neue";
+    letter-spacing: 3px;
 }
 
 @media (max-width: 1115px) {
-    section {
-        height: auto;
+
+    .carousel {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    button {
+        display: none;
     }
 }
 </style>

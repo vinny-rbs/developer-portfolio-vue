@@ -24,3 +24,5 @@ const isDark = ref(true);
         </DefaultButton>
     </header>
 </template>
+
+<style scoped></style>
