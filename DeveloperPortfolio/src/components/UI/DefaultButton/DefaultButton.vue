@@ -3,7 +3,7 @@
 <template>
     <button class="
       flex w-fit h-fit gap-[clamp(0.5em,2vw,1em)] p-2 rounded-[2em] border-3
-      border-[var(--color-dark-800)] dark:border-[var(--color-dark-800)]
+      border-(--color-primary) dark:border-(--color-primary)
       shadow-[0px_3px_0_var(--color-primary-shadow)]
       transition-all duration-200 ease-in-out
       hover:-translate-y-1

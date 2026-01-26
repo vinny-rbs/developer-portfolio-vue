@@ -1,6 +1,6 @@
 <script setup>
 
-import { TimeLineInfo } from '@/data/educationTimeline'
+import { TimeLineInfo } from '@/data/education'
 
 </script>
 

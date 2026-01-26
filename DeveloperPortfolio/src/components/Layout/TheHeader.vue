@@ -22,7 +22,7 @@ const toggleDark = useToggle(isDark);
 
 <template>
     <header v-if="route.meta.showHeader !== false"
-        class="w-dvw h-[clamp(4rem,10vw,7rem)] max-h-32 flex justify-center items-center py-7 px-[clamp(1rem,10vw,8rem)]">
+        class="w-dvw h-[clamp(5rem,10vw,7rem)] max-h-32 flex justify-center items-center py-7 px-[clamp(1rem,10vw,8rem)]">
         <Navbar />
         <Divider />
         <DefaultButton @click="toggleDark()">

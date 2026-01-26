@@ -1,5 +1,5 @@
 <script setup>
-import ProjectCard from '@/components/Layout/Carousel/ProjectCard.vue'
+import ProjectCard from '@/components/Layout/ProjectCarousel/ProjectCard.vue'
 import TitlePage from '@/components/UI/TitlePage/TitlePage.vue';
 
 </script>

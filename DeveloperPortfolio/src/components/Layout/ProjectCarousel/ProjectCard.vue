@@ -28,10 +28,9 @@ const prev = () => {
                 </template>
             </DefaultButton>
             <div class="overflow-hidden w-full ">
-                <div class="carousel flex transition-transform duration-700 ease-[cubic-bezier(0.4,0,0.2,1)] gap-8"
-                    :style="{
-                        transform: `translateX(-${currentIndex * (CARD_WIDTH + GAP)}px)`
-                    }">
+                <div class="carousel flex transition-transform duration-700 ease-in-out gap-8" :style="{
+                    transform: `translateX(-${currentIndex * (CARD_WIDTH + GAP)}px)`
+                }">
                     <div v-for="project in projects" :key="project.id"
                         class="w-full max-w-[25em] shrink-0 flex flex-col gap-6">
                         <a :href="project.liveDemo" target="_blank" rel="noopener noreferrer"
