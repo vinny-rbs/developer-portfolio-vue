@@ -1,4 +1,3 @@
-import SunCodeImg from "@/assets/images/profileImg/SunCode.svg";
 import ArtsaboariaImg from "@/assets/images/projectsImg/ArtsaboariaImg.png";
 import PigFinanceImg from "@/assets/images/projectsImg/PigFinanceImg.png";
 
@@ -53,70 +52,6 @@ export const projects: Project[] = [
     ],
     repository: "https://github.com/seuuser/pigfinance",
     liveDemo: "https://pigfinance.vercel.app",
-  },
-  {
-    id: "artsaboaria",
-    title: "Artsaboaria",
-    category: "e-commerce",
-    description:
-      "Artsaboaria é um e-commerce especializado na venda de sabonetes artesanais, com foco em qualidade, sustentabilidade e experiência do usuário. O design clean e elegante, aliado a uma navegação intuitiva, traduz a essência artesanal da marca e proporciona uma experiência de compra diferenciada. Este projeto foi criado para atender à solicitação de demonstração de um cliente real.",
-    image: ArtsaboariaImg,
-    technologies: [
-      {
-        title: "Vue.js",
-        color: "#41B883",
-      },
-      {
-        title: "Figma",
-        color: "#A259FF",
-      },
-      {
-        title: "Spring Boot",
-        color: "#6DB33F",
-      },
-      {
-        title: "MySQL",
-        color: "#F29111",
-      },
-      {
-        title: "Postman",
-        color: "#FF6C38",
-      },
-    ],
-    repository: "https://github.com/seuuser/pigfinance",
-    liveDemo: "https://artsaboaria-website.vercel.app",
-  },
-  {
-    id: "artsaboaria",
-    title: "Artsaboaria",
-    category: "e-commerce",
-    description:
-      "Artsaboaria é um e-commerce especializado na venda de sabonetes artesanais, com foco em qualidade, sustentabilidade e experiência do usuário. O design clean e elegante, aliado a uma navegação intuitiva, traduz a essência artesanal da marca e proporciona uma experiência de compra diferenciada. Este projeto foi criado para atender à solicitação de demonstração de um cliente real.",
-    image: ArtsaboariaImg,
-    technologies: [
-      {
-        title: "Vue.js",
-        color: "#41B883",
-      },
-      {
-        title: "Figma",
-        color: "#A259FF",
-      },
-      {
-        title: "Spring Boot",
-        color: "#6DB33F",
-      },
-      {
-        title: "MySQL",
-        color: "#F29111",
-      },
-      {
-        title: "Postman",
-        color: "#FF6C38",
-      },
-    ],
-    repository: "https://github.com/seuuser/pigfinance",
-    liveDemo: "https://artsaboaria-website.vercel.app",
   },
   {
     id: "artsaboaria",

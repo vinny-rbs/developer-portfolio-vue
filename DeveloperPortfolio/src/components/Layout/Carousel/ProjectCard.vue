@@ -6,7 +6,6 @@ import { ArrowLeft, ArrowRight, AppWindow } from 'lucide-vue-next'
 import Badge from '@/components/UI/Badge.vue'
 
 const currentIndex = ref(0)
-
 const CARD_WIDTH = 360
 const GAP = 32
 
@@ -21,8 +20,7 @@ const prev = () => {
 </script>
 
 <template>
-    <section class="w-screen min-h-screen px-[clamp(2rem,5vw,4.5rem)] py-10 flex flex-col gap-10">
-        <h2 class="text-5xl font-bold">PROJETOS</h2>
+    <section class="h-full px-[clamp(2rem,5vw,4.5rem)] py-10 flex flex-col gap-10">
         <div class="flex items-center gap-8">
             <DefaultButton @click="prev">
                 <template #content>
@@ -37,7 +35,7 @@ const prev = () => {
                     <div v-for="project in projects" :key="project.id"
                         class="w-full max-w-[25em] shrink-0 flex flex-col gap-6">
                         <a :href="project.liveDemo" target="_blank" rel="noopener noreferrer"
-                            class="relative overflow-hidden rounded-xl group">
+                            class="relative overflow-hidden rounded-xl group dark:bg-surface dark:border-dark-900 border-4 dark:border-0 dark:shadow-[0px_0px_0px_0px_var(--color-primary-shadow)] shadow-[0px_4px_0px_0px_var(--color-primary-shadow)]">
                             <img :src="project.image" :alt="project.title"
                                 class="aspect-square w-full object-cover transition-transform duration-300 group-hover:scale-105" />
                             <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity
@@ -52,7 +50,7 @@ const prev = () => {
                             <h3 class="text-2xl font-bold">
                                 {{ project.title }}
                             </h3>
-                            <p class="text-sm text-zinc-400 line-clamp-3">
+                            <p class="text-sm dark:text-color-bg line-clamp-3">
                                 {{ project.description }}
                             </p>
                             <div class="flex flex-wrap gap-2">
@@ -74,11 +72,6 @@ const prev = () => {
 
 
 <style scoped>
-h2 {
-    font-family: "Bebas Neue";
-    letter-spacing: 3px;
-}
-
 @media (max-width: 1115px) {
 
     .carousel {
