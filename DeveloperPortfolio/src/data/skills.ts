@@ -8,7 +8,12 @@ import figmaSkill from "@/assets/images/skillImg/figmaSkill.svg";
 import vscodeSkill from "@/assets/images/skillImg/vscodeSkill.svg";
 import githubSkill from "@/assets/images/skillImg/githubSkill.svg";
 
-export const skills = [
+interface Skill {
+  name: string;
+  icon: string;
+}
+
+export const skills: Skill[] = [
   { name: "HTML", icon: htmlSkill },
   { name: "CSS", icon: cssSkill },
   { name: "JavaScript", icon: javascriptSkill },

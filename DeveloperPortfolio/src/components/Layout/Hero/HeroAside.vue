@@ -22,7 +22,7 @@ import { CardIcon, CardContent } from '@/components/UI/Card/index.js';
                 src='@/assets/images/profileImg/Vinicius Campus Party2.webp' alt="Jovem na Campus Party">
         </div>
         <div
-            class="grid-4 max-w-[21em] cursor-pointer flex justify-center items-center col-span-2 row-span-2 col-start-3 row-start-5 p-8 rounded-2xl overflow-hidden dark:bg-surface dark:border-dark-900 border-3 dark:border-0 dark:shadow-[0px_0px_0px_0px_var(--color-primary-shadow)] shadow-[0px_4px_0px_0px_var(--color-primary-shadow)]">
+            class="grid-4 max-w-[21em] flex justify-center items-center col-span-2 row-span-2 col-start-3 row-start-5 p-8 rounded-2xl overflow-hidden dark:bg-surface dark:border-dark-900 border-3 dark:border-0 dark:shadow-[0px_0px_0px_0px_var(--color-primary-shadow)] shadow-[0px_4px_0px_0px_var(--color-primary-shadow)]">
             <img class="suncode rounded-[50%]" src=" @/assets/images/profileImg/SunCode.svg" alt="SunCode Logotipo">
         </div>
         <a href="https://www.linkedin.com/in/vinny-rbs/" target="_blank" rel="noopener noreferrer">
@@ -107,8 +107,8 @@ import { CardIcon, CardContent } from '@/components/UI/Card/index.js';
 @media (max-width: 440px) {
 
     aside {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
 
     .grid-4 {

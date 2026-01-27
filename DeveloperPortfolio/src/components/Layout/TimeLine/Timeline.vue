@@ -7,10 +7,10 @@ import TimelineStraight from './TimelineStraight.vue';
 
 <template>
     <main class="h-full flex flex-row w-screen">
-        <aside class="w-[20%] py-12">
+        <aside class="flex justify-end w-[20%] py-12">
             <TimelineStraight />
         </aside>
-        <article class="flex-1 px-[clamp(0em,2vw,2em)]">
+        <article class="flex-1">
             <TimelineItem />
         </article>
     </main>

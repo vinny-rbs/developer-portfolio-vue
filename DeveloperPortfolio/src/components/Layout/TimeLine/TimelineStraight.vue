@@ -4,10 +4,9 @@ import { TimeLineInfo } from '@/data/education'
 
 <template>
     <div class="relative flex items-center justify-center h-full py-10">
-        <div class="absolute left-1/2 border-t-3 border-b-3 border-(--color-text-primary) -translate-x-1/2 h-full w-2.5"
-            style="
-                background-image: radial-gradient(circle, var(--color-text-primary) 2px, transparent 3px);
-                background-size: 2px 15px;
+        <div class="absolute left-1/2 border-y-0 border-(--color-text-primary) -translate-x-1/2 h-full w-1" style="
+                background-image: radial-gradient(circle, var(--color-text-primary) 2px, transparent 2px);
+                background-size: 4px 15px;
                 background-repeat: repeat-y;
                 background-position: center;
             " />
