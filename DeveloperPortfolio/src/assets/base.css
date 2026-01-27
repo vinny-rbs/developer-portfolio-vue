@@ -91,14 +91,19 @@
     height: auto;
   }
 
+  a,
   button,
   li {
-    cursor: pointer;
+    cursor: none;
   }
 
   button:focus {
     outline: none;
   }
+}
+
+body {
+  cursor: none;
 }
 
 @layer utilities {

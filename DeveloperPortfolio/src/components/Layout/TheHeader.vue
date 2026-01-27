@@ -32,5 +32,3 @@ const toggleDark = useToggle(isDark);
         </DefaultButton>
     </header>
 </template>
-
-<style scoped></style>

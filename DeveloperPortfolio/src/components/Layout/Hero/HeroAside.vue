@@ -27,25 +27,25 @@ import { CardIcon, CardContent } from '@/components/UI/Card/index.js';
         </div>
         <a href="https://www.linkedin.com/in/vinny-rbs/" target="_blank" rel="noopener noreferrer">
             <div
-                class="grid-5 max-w-[4.5em] self-center min-w-[4.25em] aspect-square cursor-pointer col-start-1 row-start-5 rounded-2xl overflow-hidden dark:bg-surface dark:border-dark-900 border-3 dark:border-0 dark:shadow-[0px_0px_0px_0px_var(--color-primary-shadow)] shadow-[0px_4px_0px_0px_var(--color-primary-shadow)]">
+                class="grid-5 max-w-[4.5em] self-center min-w-[4.25em] aspect-square col-start-1 row-start-5 rounded-2xl overflow-hidden dark:bg-surface dark:border-dark-900 border-3 dark:border-0 dark:shadow-[0px_0px_0px_0px_var(--color-primary-shadow)] shadow-[0px_4px_0px_0px_var(--color-primary-shadow)]">
                 <CardIcon :icon="Linkedin" size="75%" backgroundColor="#0077b5" />
             </div>
         </a>
         <a href="https://github.com/vinny-rbs" target="_blank" rel="noopener noreferrer">
             <div
-                class="grid-6 max-w-[4.5em] self-center min-w-[4.25em] aspect-square cursor-pointer col-start-2 row-start-5 rounded-2xl overflow-hidden dark:bg-surface dark:border-dark-900 border-3 dark:border-0 dark:shadow-[0px_0px_0px_0px_var(--color-primary-shadow)] shadow-[0px_4px_0px_0px_var(--color-primary-shadow)]">
+                class="grid-6 max-w-[4.5em] self-center min-w-[4.25em] aspect-square col-start-2 row-start-5 rounded-2xl overflow-hidden dark:bg-surface dark:border-dark-900 border-3 dark:border-0 dark:shadow-[0px_0px_0px_0px_var(--color-primary-shadow)] shadow-[0px_4px_0px_0px_var(--color-primary-shadow)]">
                 <CardIcon :icon="Github" size="75%" backgroundColor="#2DBA4E" />
             </div>
         </a>
         <a href="https://dribbble.com/vinny_rbs" target="_blank" rel="noopener noreferrer">
             <div
-                class="grid-7 max-w-[4.5em] self-center min-w-[4.25em] aspect-square cursor-pointer row-start-6 rounded-2xl overflow-hidden dark:bg-surface dark:border-dark-900 border-3 dark:border-0 dark:shadow-[0px_0px_0px_0px_var(--color-primary-shadow)] shadow-[0px_4px_0px_0px_var(--color-primary-shadow)]">
+                class="grid-7 max-w-[4.5em] self-center min-w-[4.25em] aspect-square row-start-6 rounded-2xl overflow-hidden dark:bg-surface dark:border-dark-900 border-3 dark:border-0 dark:shadow-[0px_0px_0px_0px_var(--color-primary-shadow)] shadow-[0px_4px_0px_0px_var(--color-primary-shadow)]">
                 <CardIcon :icon="Dribbble" size="75%" backgroundColor="#ED4989" />
             </div>
         </a>
         <a href="https://medium.com/@viniciusjunioribeiro05" target="_blank" rel="noopener noreferrer">
             <div
-                class="grid-8 max-w-[4.5em] self-center min-w-[4.25em] aspect-square cursor-pointer row-start-6 rounded-2xl overflow-hidden dark:bg-surface dark:border-dark-900 border-3 dark:border-0 dark:shadow-[0px_0px_0px_0px_var(--color-primary-shadow)] shadow-[0px_4px_0px_0px_var(--color-primary-shadow)]">
+                class="grid-8 max-w-[4.5em] self-center min-w-[4.25em] aspect-square row-start-6 rounded-2xl overflow-hidden dark:bg-surface dark:border-dark-900 border-3 dark:border-0 dark:shadow-[0px_0px_0px_0px_var(--color-primary-shadow)] shadow-[0px_4px_0px_0px_var(--color-primary-shadow)]">
                 <CardIcon :icon="BookOpenCheck" size="75%" dark:color="" backgroundColor="#949494" />
             </div>
         </a>
@@ -53,6 +53,17 @@ import { CardIcon, CardContent } from '@/components/UI/Card/index.js';
 </template>
 
 <style scoped>
+@media (max-width: 1280px) {
+
+    aside {
+        height: auto;
+        grid-template-columns: repeat(7, minmax(0, 1fr));
+        max-width: 43em;
+    }
+
+
+}
+
 @media (max-width: 1115px) {
 
     .grid-1 {

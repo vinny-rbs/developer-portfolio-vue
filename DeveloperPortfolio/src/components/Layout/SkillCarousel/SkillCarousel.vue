@@ -13,7 +13,7 @@ const loopSkills = computed(() => [...skills, ...skills, ...skills, ...skills])
 
 <template>
     <div class="relative overflow-hidden w-full py-20">
-        <div class="flex w-max animate-carousel" :style="{ animationDuration: duration }">
+        <div class=" flex w-max animate-carousel" :style="{ animationDuration: duration }">
             <div v-for="(skill, index) in loopSkills" :key="`${skill.name}-${index}`"
                 class="mx-6 flex items-center justify-center">
                 <div class="w-20 h-20 rounded-full border-2
