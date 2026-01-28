@@ -8,7 +8,7 @@ const BadgeProps = defineProps<{
 </script>
 
 <template>
-    <p class="border-3 font-bold w-fit px-2 py-0.75 rounded-4xl text-[0.75rem] select-none line-clamp-1">
+    <p class="border-3 font-bold w-fit px-2  py-0.75 rounded-4xl text-[0.75rem] select-none line-clamp-1">
         {{ label }}
     </p>
 </template>

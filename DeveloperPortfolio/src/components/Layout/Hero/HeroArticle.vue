@@ -18,12 +18,13 @@ const EmailClick = () => {
         </div>
         <div class="flex gap-4">
             <Badge color="var(--color-blue-500)" label="Desenvolvedor Fullstack" />
-            <Badge color="var(--color-orange)" label="Designer UI & UX" />
+            <Badge color="var(--color-orange)" label="Designer UI UX" />
         </div>
         <p> Sou desenvolvedor Fullstack com mais de 3 anos de experiência freelancer, especializado em Vue.js e na
             criação de interfaces modernas, funcionais e agradaveis. Tenho afinidade com UI/UX Design, prototipando
             no Figma com foco em usabilidade e experiência do usuário. Também possuo conhecimentos em APIs REST,
-            backend e integração com bancos de dados, permitindo a construção de soluções completas.
+            backend e integração com bancos de dados, permitindo a construção de soluções completas e bem estruturadas.
+            Como hobbies, me dedico à edição e à fotografia, habilidades que contribuem para meus projetos.
         </p>
         <div class="flex gap-[clamp(1em,4vw,3em)] py-8">
             <DefaultButton @click="EmailClick">
