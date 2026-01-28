@@ -12,7 +12,7 @@ import { softskills } from '@/data/softskill';
     <section class="w-screen min-h-[calc(100vh-clamp(4rem,10vw,7rem))]">
         <TitlePage title="Educação" />
         <TimeLine />
-        <TitlePage title="Serviços" />
+        <TitlePage title="Softskills | Habilidades" />
         <div class="flex justify-center gap-12 flex-col px-[clamp(2em,5vw,4.5em)] lg:flex-row flex-1">
             <SoftSkillSection v-for="softskill in softskills" :key="softskill.title" :title="softskill.title"
                 :description="softskill.description" />
