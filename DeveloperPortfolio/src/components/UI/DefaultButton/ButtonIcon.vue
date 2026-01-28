@@ -12,6 +12,5 @@ const ButtonProps = defineProps<{
 </script>
 
 <template>
-    <component :is="icon" :size="size ?? 'clamp(18px, 3vw, 24px)'" dark:color="color ?? '#f5f5f5'"
-        :strokeWidth="strokeWidth ?? 2" />
+    <component :is="icon" :size="size ?? '24px'" dark:color="color ?? '#f5f5f5'" :strokeWidth="strokeWidth ?? 2" />
 </template>

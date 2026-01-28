@@ -1,20 +1,38 @@
-<script setup>
+<script setup lang="ts">
+import { RouterLink } from 'vue-router'
 
-import { RouterLink } from 'vue-router';
+defineProps<{
+    mobile?: boolean
+}>()
 
+const emit = defineEmits<{
+    (e: 'close'): void
+}>()
+
+function handleClick() {
+    emit('close')
+}
 </script>
 
 <template>
-    <nav class="flex w-full h-full items-center flex-row-reverse border-dashed">
-        <ul class="flex justify-around items-center gap-[clamp(1rem,8vw,4rem)]">
+    <nav>
+        <ul :class="mobile
+            ? 'flex flex-col gap-8 text-2xl items-center'
+            : 'flex justify-end items-end gap-[clamp(1rem,8vw,4rem)]'">
             <li>
-                <RouterLink to="/" active-class="active">Sobre mim</RouterLink>
+                <RouterLink to="/" active-class="active" @click="handleClick">
+                    Sobre mim
+                </RouterLink>
             </li>
             <li>
-                <RouterLink to="/projects" active-class="active">Projetos</RouterLink>
+                <RouterLink to="/projects" active-class="active" @click="handleClick">
+                    Projetos
+                </RouterLink>
             </li>
             <li>
-                <RouterLink to="/ability" active-class="active">Habilidades</RouterLink>
+                <RouterLink to="/experience" active-class="active" @click="handleClick">
+                    Experiência
+                </RouterLink>
             </li>
         </ul>
     </nav>
@@ -24,20 +42,18 @@ import { RouterLink } from 'vue-router';
 a {
     position: relative;
     display: inline-block;
-    transition: all 0.2s ease-in-out;
 }
 
 a::after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -4px;
+    bottom: -6px;
     width: 100%;
     height: 2px;
     background-color: var(--color-text-primary);
-    transition: transform 0.3s ease-in-out;
     transform: scaleX(0);
-    transform-origin: center;
+    transition: transform 0.3s ease;
 }
 
 a:hover::after {

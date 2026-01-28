@@ -10,7 +10,13 @@ const props = defineProps<{
 </script>
 
 <template>
-    <div class="flex flex-col flex-1 gap-6 max-w-[30em]">
+    <div class="
+      flex flex-col gap-6
+      w-full p-6
+      rounded-md
+      border-2 border-(--color-text-primary)
+      shadow-[0px_4px_0px_var(--color-primary-shadow)]
+    ">
         <SoftSkillTitle :title="props.title" />
         <SoftSkillDescription :description="props.description" />
     </div>

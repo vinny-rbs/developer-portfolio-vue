@@ -16,9 +16,9 @@ const router = createRouter({
       meta: { showHeader: true },
     },
     {
-      path: "/ability",
-      name: "ability",
-      component: () => import("@/Views/Ability.vue"),
+      path: "/experience",
+      name: "experience",
+      component: () => import("@/Views/Experience.vue"),
       meta: { showHeader: true },
     },
     {

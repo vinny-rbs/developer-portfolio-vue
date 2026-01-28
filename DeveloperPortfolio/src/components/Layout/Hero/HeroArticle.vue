@@ -50,6 +50,15 @@ const EmailClick = () => {
 </template>
 
 <style scoped>
+@media (max-width: 1280px) {
+
+    article {
+        height: auto;
+    }
+
+
+}
+
 @media (max-width: 1115px) {
     article {
         justify-content: center;

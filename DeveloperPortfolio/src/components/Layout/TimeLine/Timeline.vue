@@ -6,20 +6,12 @@ import TimelineStraight from './TimelineStraight.vue';
 </script>
 
 <template>
-    <main class="h-full flex flex-row w-screen">
-        <aside class="flex justify-end w-[20%] py-12">
+    <main class="h-full flex flex-row">
+        <aside class="hidden md:flex justify-end w-[20%] p-6 mx-12">
             <TimelineStraight />
         </aside>
-        <article class="flex-1">
+        <article class="h-auto flex-1 flex flex-col px-[clamp(2em,5vw,4.5em)] gap-12">
             <TimelineItem />
         </article>
     </main>
 </template>
-
-<style scoped>
-@media (max-width: 440px) {
-    aside {
-        display: none;
-    }
-}
-</style>
