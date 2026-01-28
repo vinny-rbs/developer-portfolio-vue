@@ -1,7 +1,7 @@
 <script setup>
 
 import SkillCarousel from '@/components/Layout/SkillCarousel/SkillCarousel.vue';
-import TimeLine from '@/components/Layout/TimeLine/TimeLine.vue';
+import TimeLine from '@/components/Layout/TimeLine/Timeline.vue';
 import TitlePage from '@/components/UI/TitlePage/TitlePage.vue';
 import SoftSkillSection from '@/components/UI/SoftSkillSection/SoftSkillSection.vue';
 import { softskills } from '@/data/softskill';
