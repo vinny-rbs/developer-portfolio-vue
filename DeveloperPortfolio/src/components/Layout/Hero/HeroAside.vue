@@ -7,10 +7,13 @@ import { CardIcon, CardContent } from '@/components/UI/Card/index.js';
 
 <template>
     <aside class="h-full max-h-200 max-w-[50em] grid grid-cols-7 grid-rows-6 gap-x-8 gap-y-10 p-[clamp(1em,5vw,8em)]">
-        <div
-            class="grid-1 col-span-7 row-span-2  rounded-2xl dark:bg-surface dark:border-dark-900 border-3 dark:border-0 dark:shadow-[0px_0px_0px_0px_var(--color-primary-shadow)] shadow-[0px_4px_0px_0px_var(--color-primary-shadow)]">
-            <CardContent title="" color-reffer="var(--color-red)" label="" />
-        </div>
+        <RouterLink class="contents" to="/projects">
+            <div
+                class="grid-1 col-span-7 row-span-2 overflow-hidden  rounded-2xl dark:bg-surface dark:border-dark-900 border-3 dark:border-0 dark:shadow-[0px_0px_0px_0px_var(--color-primary-shadow)] shadow-[0px_4px_0px_0px_var(--color-primary-shadow)]">
+                <img class="h-full w-full object-cover object-[center_20%] transition-transform duration-300 hover:scale-102"
+                    src='@/assets/images/profileImg/Welcome.webp' alt="Call to work">
+            </div>
+        </RouterLink>
         <div
             class="grid-2 col-span-4 row-span-2 row-start-3 rounded-2xl overflow-hidden dark:bg-surface dark:border-dark-900 border-3 dark:border-0 dark:shadow-[0px_0px_0px_0px_var(--color-primary-shadow)] shadow-[0px_4px_0px_0px_var(--color-primary-shadow)]">
             <img class="h-full w-full object-cover object-[center_20%]"
@@ -19,11 +22,12 @@ import { CardIcon, CardContent } from '@/components/UI/Card/index.js';
         <div
             class="grid-3 col-span-3 row-span-4 col-start-5 row-start-3 rounded-2xl overflow-hidden dark:bg-surface dark:border-dark-900 border-3 dark:border-0 dark:shadow-[0px_0px_0px_0px_var(--color-primary-shadow)] shadow-[0px_4px_0px_0px_var(--color-primary-shadow)]">
             <img class="h-full w-full object-cover object-center"
-                src='@/assets/images/profileImg/Vinicius Campus Party2.webp' alt="Jovem na Campus Party">
+                src='@/assets/images/profileImg/Vinicius Campus Party.webp' alt="Jovem na Campus Party">
         </div>
         <div
-            class="grid-4 max-w-[21em] flex justify-center items-center col-span-2 row-span-2 col-start-3 row-start-5 p-8 rounded-2xl overflow-hidden dark:bg-surface dark:border-dark-900 border-3 dark:border-0 dark:shadow-[0px_0px_0px_0px_var(--color-primary-shadow)] shadow-[0px_4px_0px_0px_var(--color-primary-shadow)]">
-            <img class="suncode rounded-[50%]" src=" @/assets/images/profileImg/SunCode.svg" alt="SunCode Logotipo">
+            class="grid-4 max-w-[21em] flex justify-center items-center flex-col gap-4 col-span-2 row-span-2 col-start-3 row-start-5 p-8 rounded-2xl overflow-hidden bg-[var(--color-red)] dark:border-dark-900 border-3 dark:border-0 dark:shadow-[0px_0px_0px_0px_var(--color-primary-shadow)] shadow-[0px_4px_0px_0px_var(--color-primary-shadow)]">
+            <img class="suncode rounded-[50%] border-3 border-[#0a0a0a] shadow-[4px_4px_0px_#0a0a0a]"
+                src=" @/assets/images/profileImg/SunCode.svg" alt="SunCode Logotipo">
         </div>
         <a href="https://www.linkedin.com/in/vinny-rbs/" target="_blank" rel="noopener noreferrer">
             <div
@@ -53,17 +57,6 @@ import { CardIcon, CardContent } from '@/components/UI/Card/index.js';
 </template>
 
 <style scoped>
-@media (max-width: 1280px) {
-
-    aside {
-        height: auto;
-        grid-template-columns: repeat(7, minmax(0, 1fr));
-        max-width: 43em;
-    }
-
-
-}
-
 @media (max-width: 1115px) {
 
     .grid-1 {

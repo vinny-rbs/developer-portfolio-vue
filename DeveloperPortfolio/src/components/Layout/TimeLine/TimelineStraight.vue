@@ -11,8 +11,12 @@ import { TimeLineInfo } from '@/data/education'
                 background-position: center;
             " />
         <div class="flex flex-col justify-between h-[109%] z-1">
-            <div v-for="(_, index) in TimeLineInfo.length" :key="index" class="w-3 h-3 rounded-xs border-3 shrink-0"
-                style="border-color: var(--color-text-primary); background-color: var(--color-text-primary);" />
+            <div v-for="(_, index) in TimeLineInfo.length" :key="index"
+                class="relative flex items-center justify-center w-6 h-6 shrink-0">
+                <div class="absolute w-6 h-6 rounded-full border-2" style="border-color: var(--color-text-primary);">
+                </div>
+                <div class="w-2 h-2 rounded-full" style="background-color: var(--color-text-primary);"></div>
+            </div>
         </div>
     </div>
 </template>
