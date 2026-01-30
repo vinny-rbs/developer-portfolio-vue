@@ -7,16 +7,16 @@ export const softskills: Softskill[] = [
   {
     title: "#01 Empatia",
     description:
-      "A empatia é a fundação de todo o processo. Significa não apenas entender a funcionalidade que o usuário precisa, mas também antecipar suas frustrações, barreiras e emoções ao interagir com uma interface.",
+      "O usuário deve ser o centro das decisões. Busco entender suas dores, objetivos e limitações para criar interfaces acessivel e funcionais, reduzindo impedimentos e melhorando a experiência de uso.",
   },
   {
     title: "#02 Comunicação",
     description:
-      "A comunicação é crucial para o sucesso de um projeto de desenvolvimento e design. Alinhamento de Equipe, Stakeholders e Clientes, Feedback Construtivo!",
+      "Comunicação clara e objetiva com equipe, stakeholders e clientes. Valorizo alinhamentos constantes, feedbacks construtivos e documentação bem estruturada para garantir entregas eficientes e sem ruídos.",
   },
   {
-    title: "#03 Mudança",
+    title: "#03 Adaptabilidade",
     description:
-      "A Desenvolvimento e o design são campos de constante e rápida evolução. Adaptabilidade é um diferencial para Adoção de Novas Tecnologias, Adaptação a Pivôs de Projeto.",
+      "Atuo bem em ambientes dinâmicos e em constante evolução. Tenho facilidade em aprender novas tecnologias, adaptar soluções e ajustar estratégias conforme as necessidades do projeto.",
   },
 ];

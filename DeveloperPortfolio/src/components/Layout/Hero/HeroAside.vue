@@ -1,7 +1,7 @@
 <script setup>
 
 import { Linkedin, Github, Dribbble, BookOpenCheck } from 'lucide-vue-next';
-import { CardIcon, CardContent } from '@/components/UI/Card/index.js';
+import { CardIcon } from '@/components/UI/Card/index.js';
 
 </script>
 
@@ -11,7 +11,7 @@ import { CardIcon, CardContent } from '@/components/UI/Card/index.js';
             <div
                 class="grid-1 col-span-7 row-span-2 overflow-hidden  rounded-2xl dark:bg-surface dark:border-dark-900 border-3 dark:border-0 dark:shadow-[0px_0px_0px_0px_var(--color-primary-shadow)] shadow-[0px_4px_0px_0px_var(--color-primary-shadow)]">
                 <img class="h-full w-full object-cover object-[center_20%] transition-transform duration-300 hover:scale-102"
-                    src='@/assets/images/profileImg/Welcome.webp' alt="Call to work">
+                    src='@/assets/images/profileImg/Welcome.webp' alt="Call to Action">
             </div>
         </RouterLink>
         <div
@@ -25,32 +25,32 @@ import { CardIcon, CardContent } from '@/components/UI/Card/index.js';
                 src='@/assets/images/profileImg/Vinicius Campus Party.webp' alt="Jovem na Campus Party">
         </div>
         <div
-            class="grid-4 max-w-[21em] flex justify-center items-center flex-col gap-4 col-span-2 row-span-2 col-start-3 row-start-5 p-8 rounded-2xl overflow-hidden bg-[var(--color-red)] dark:border-dark-900 border-3 dark:border-0 dark:shadow-[0px_0px_0px_0px_var(--color-primary-shadow)] shadow-[0px_4px_0px_0px_var(--color-primary-shadow)]">
+            class="grid-4 max-w-[21em] flex justify-center items-center flex-col gap-4 col-span-2 row-span-2 col-start-3 row-start-5 p-8 rounded-2xl overflow-hidden bg-red dark:border-dark-900 border-3 dark:border-0 dark:shadow-[0px_0px_0px_0px_var(--color-primary-shadow)] shadow-[0px_4px_0px_0px_var(--color-primary-shadow)]">
             <img class="suncode rounded-[50%] border-3 border-[#0a0a0a] shadow-[4px_4px_0px_#0a0a0a]"
-                src=" @/assets/images/profileImg/SunCode.svg" alt="SunCode Logotipo">
+                src=" @/assets/images/profileImg/SunCode.svg" alt="Sun.Code Logotipo">
         </div>
         <a href="https://www.linkedin.com/in/vinny-rbs/" target="_blank" rel="noopener noreferrer">
             <div
                 class="grid-5 max-w-[4.5em] self-center min-w-[4.25em] aspect-square col-start-1 row-start-5 rounded-2xl overflow-hidden dark:bg-surface dark:border-dark-900 border-3 dark:border-0 dark:shadow-[0px_0px_0px_0px_var(--color-primary-shadow)] shadow-[0px_4px_0px_0px_var(--color-primary-shadow)]">
-                <CardIcon :icon="Linkedin" size="75%" backgroundColor="#0077b5" />
+                <CardIcon :icon="Linkedin" backgroundColor="#0077b5" />
             </div>
         </a>
         <a href="https://github.com/vinny-rbs" target="_blank" rel="noopener noreferrer">
             <div
                 class="grid-6 max-w-[4.5em] self-center min-w-[4.25em] aspect-square col-start-2 row-start-5 rounded-2xl overflow-hidden dark:bg-surface dark:border-dark-900 border-3 dark:border-0 dark:shadow-[0px_0px_0px_0px_var(--color-primary-shadow)] shadow-[0px_4px_0px_0px_var(--color-primary-shadow)]">
-                <CardIcon :icon="Github" size="75%" backgroundColor="#2DBA4E" />
+                <CardIcon :icon="Github" backgroundColor="#2DBA4E" />
             </div>
         </a>
         <a href="https://dribbble.com/vinny_rbs" target="_blank" rel="noopener noreferrer">
             <div
                 class="grid-7 max-w-[4.5em] self-center min-w-[4.25em] aspect-square row-start-6 rounded-2xl overflow-hidden dark:bg-surface dark:border-dark-900 border-3 dark:border-0 dark:shadow-[0px_0px_0px_0px_var(--color-primary-shadow)] shadow-[0px_4px_0px_0px_var(--color-primary-shadow)]">
-                <CardIcon :icon="Dribbble" size="75%" backgroundColor="#ED4989" />
+                <CardIcon :icon="Dribbble" backgroundColor="#ED4989" />
             </div>
         </a>
         <a href="https://medium.com/@viniciusjunioribeiro05" target="_blank" rel="noopener noreferrer">
             <div
                 class="grid-8 max-w-[4.5em] self-center min-w-[4.25em] aspect-square row-start-6 rounded-2xl overflow-hidden dark:bg-surface dark:border-dark-900 border-3 dark:border-0 dark:shadow-[0px_0px_0px_0px_var(--color-primary-shadow)] shadow-[0px_4px_0px_0px_var(--color-primary-shadow)]">
-                <CardIcon :icon="BookOpenCheck" size="75%" dark:color="" backgroundColor="#949494" />
+                <CardIcon :icon="BookOpenCheck" backgroundColor="#949494" />
             </div>
         </a>
     </aside>

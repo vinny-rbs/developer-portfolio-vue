@@ -10,4 +10,4 @@ import CustomCursor from './components/UI/CustomCursor/CustomCursor.vue';
   <TheHeader />
   <CustomCursor v-if="$route.meta.cursor !== false" />
   <RouterView />
-</template>
+</template> 

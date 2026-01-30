@@ -14,7 +14,7 @@ const IconContentProps = defineProps<{
 
 <template>
     <div class="CardIcon h-full w-full flex justify-center items-center p-3.5">
-        <component :is="icon" :size="size ?? 'clamp(18px, 3vw, 24px)'" :color="color" :strokeWidth="strokeWidth ?? 2" />
+        <component :is="icon" :size="size ?? 'clamp(24px, 3vw, 32px)'" :color="color" :strokeWidth="strokeWidth ?? 2" />
     </div>
 </template>
 

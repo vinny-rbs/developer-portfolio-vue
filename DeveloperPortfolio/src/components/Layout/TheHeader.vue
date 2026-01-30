@@ -50,7 +50,7 @@ function closeMenu() {
             <div v-if="menuOpen" class="fixed inset-0 z-50 lg:hidden flex flex-col items-center justify-center
                bg-white/60 dark:bg-black/60 backdrop-blur-md">
                 <Navbar mobile @close="closeMenu" />
-                <DefaultButton class="lg:hidden absolute top-[3%] right-[3.2%]" aria-label="Abrir menu"
+                <DefaultButton class="lg:hidden absolute top-[2.5%] right-[4%]" aria-label="Abrir menu"
                     @click="menuOpen = !menuOpen">
                     <template #icon>
                         <ButtonIcon :icon="menuOpen ? X : Menu" />

@@ -6,7 +6,7 @@
     },
     "module": "ESNext",
     "moduleResolution": "bundler",
-    "target": "esnext",
+    "target": "esnext"
   },
   "exclude": ["node_modules", "dist", "@vue/tsconfig/tsconfig.dom.json"]
 }

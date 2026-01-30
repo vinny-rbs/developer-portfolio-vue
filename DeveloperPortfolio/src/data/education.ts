@@ -8,12 +8,12 @@ interface TimelineItem {
 
 export const TimeLineInfo: TimelineItem[] = [
   {
-    title: "Curso Desenvolvedor Web",
-    subtitle: "- Frontend",
-    institution: "Senac - Serviço Nacional de Aprendizagem Comercial",
-    period: "Novembro 2022 - Janeiro 2023",
+    title: "Análise e Desenvolvimento de Sistemas",
+    subtitle: "",
+    institution: "Unialfa - Centro Universitário Alves Faria",
+    period: "Março 2025 - Dezembro 2026",
     experience:
-      "Trello, GitHub, GitLab, Git, Visual Studio Code, HTML, CSS, JavaScript, Figma, Miro.",
+      "Lógica de Programação, POO, Análise de Sistemas, Segurança, Arquitetura de Software, C#, Java, Python.",
   },
   {
     title: "Curso Técnico em Informática",
@@ -25,11 +25,11 @@ export const TimeLineInfo: TimelineItem[] = [
       "HTML, CSS, JavaScript, GitHub, Git, Vue.js, Java, Spring Boot.",
   },
   {
-    title: "Análise e Desenvolvimento de Sistemas",
-    subtitle: "",
-    institution: "Unialfa - Centro Universitário Alves Faria",
-    period: "Março 2025 - Dezembro 2026",
+    title: "Curso Desenvolvedor Web",
+    subtitle: "- Frontend",
+    institution: "Senac - Serviço Nacional de Aprendizagem Comercial",
+    period: "Novembro 2022 - Janeiro 2023",
     experience:
-      "Lógica de Programação, POO, Análise de Sistemas, Segurança, Arquitetura de Software, C#, Java, Python.",
+      "Trello, GitHub, GitLab, Git, Visual Studio Code, HTML, CSS, JavaScript, Figma, Miro.",
   },
 ];
