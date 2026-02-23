@@ -40,7 +40,7 @@ const EmailClick = () => {
                     <ButtonIcon :icon="FileUser" :stroke-width=2.5 />
                 </template>
                 <template #content>
-                    <a href="/CV Vinicius Ribeiro PT.pdf" target="_blank" rel="noopener noreferrer"
+                    <a href="/Vinicius_Ribeiro_Desenvolvedor_Base_CV.pdf" target="_blank" rel="noopener noreferrer"
                         download="Vinicius Ribeiro currículo">
                         <ButtonContent label="Currículo" />
                     </a>
